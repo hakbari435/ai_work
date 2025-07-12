@@ -210,7 +210,7 @@ data = [
     }
 ]
 
-# Clean the data and write to file as JSON array
+# Clean the datasets and write to file as JSON array
 with open("compose_sdui_dataset.json", "w", encoding="utf-8") as f:
     cleaned_data = [clean_dict(item) for item in data]
     json.dump(cleaned_data, f, ensure_ascii=False, indent=2)
